@@ -434,13 +434,13 @@ public class BaseViewAttrSetter<V extends View> implements ViewAttrSetter<V> {
                 }
                 break;
             case "rotation":
-                view.setRotation(Dimensions.parseToPixel(value, view));
+                view.setRotation(Float.parseFloat(value));
                 break;
             case "rotationX":
-                view.setRotationX(Dimensions.parseToPixel(value, view));
+                view.setRotationX(Float.parseFloat(value));
                 break;
             case "rotationY":
-                view.setRotationY(Dimensions.parseToPixel(value, view));
+                view.setRotationY(Float.parseFloat(value));
                 break;
             case "saveEnabled":
                 view.setSaveEnabled(Boolean.valueOf(value));
