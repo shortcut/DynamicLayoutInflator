@@ -12,7 +12,7 @@ public class Ids {
     private static AtomicInteger maxId = new AtomicInteger(20161209);
     private static HashMap<String, Integer> ids = new HashMap<>();
 
-    public static String parseIdName(String idName) {
+    private static String parseIdName(String idName) {
         if (idName.startsWith("@+id/")) {
             return idName.substring(5);
         } else if (idName.startsWith("@id/")) {

@@ -2,8 +2,6 @@ package org.autojs.dynamiclayoutinflater;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.InflateException;
@@ -20,6 +18,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+
 import org.autojs.dynamiclayoutinflater.attrsetter.BaseViewAttrSetter;
 import org.autojs.dynamiclayoutinflater.attrsetter.DatePickerAttrSetter;
 import org.autojs.dynamiclayoutinflater.attrsetter.FrameLayoutAttrSetter;
@@ -33,7 +34,6 @@ import org.autojs.dynamiclayoutinflater.attrsetter.TimePickerAttrSetter;
 import org.autojs.dynamiclayoutinflater.attrsetter.ToolbarAttrSetter;
 import org.autojs.dynamiclayoutinflater.attrsetter.ViewGroupAttrSetter;
 import org.autojs.dynamiclayoutinflater.util.Res;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
@@ -96,7 +96,7 @@ public class DynamicLayoutInflater {
 
     }
 
-    public void registerViewAttrSetter(String fullName, ViewAttrSetter<?> setter) {
+    private void registerViewAttrSetter(String fullName, ViewAttrSetter<?> setter) {
         mViewAttrSetters.put(fullName, setter);
         ViewCreator<?> creator = setter.getCreator();
         if (creator != null) {

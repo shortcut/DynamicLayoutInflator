@@ -3,17 +3,18 @@ package org.autojs.dynamiclayoutinflater.attrsetter;
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.os.Build;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import androidx.annotation.Nullable;
+
+import org.autojs.dynamiclayoutinflater.ViewAttrSetter;
 import org.autojs.dynamiclayoutinflater.ViewCreator;
 import org.autojs.dynamiclayoutinflater.util.Colors;
 import org.autojs.dynamiclayoutinflater.util.Dimensions;
-import org.autojs.dynamiclayoutinflater.ViewAttrSetter;
 import org.autojs.dynamiclayoutinflater.util.Drawables;
 import org.autojs.dynamiclayoutinflater.util.Gravities;
 import org.autojs.dynamiclayoutinflater.util.Ids;

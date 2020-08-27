@@ -1,7 +1,8 @@
 package org.autojs.dynamiclayoutinflater.attrsetter;
 
-import android.support.v7.widget.Toolbar;
 import android.view.ViewGroup;
+
+import androidx.appcompat.widget.Toolbar;
 
 import org.autojs.dynamiclayoutinflater.util.Strings;
 

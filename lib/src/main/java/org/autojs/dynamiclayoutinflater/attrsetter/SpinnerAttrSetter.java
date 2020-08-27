@@ -2,7 +2,7 @@ package org.autojs.dynamiclayoutinflater.attrsetter;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.SimpleAdapter;
